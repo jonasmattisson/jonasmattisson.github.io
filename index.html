@@ -99,6 +99,7 @@ h1 {
   <h1>Description</h1>
   <p>When clicking the "Stop form tracking" button, we run the following code:</p>
   <code>
+    _hsq.push(['doNotTrack']);
     _hsq.push([
       'trackEvent',
       {
@@ -133,6 +134,7 @@ h1 {
     stopTrackingBtn.addEventListener('click', function () {
       const _hsq = (window._hsq = window._hsq || [])
       // Stop form tracking code here
+      _hsq.push(['doNotTrack']);
       _hsq.push([
         'trackEvent',
         {
